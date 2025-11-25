@@ -21,7 +21,7 @@ It models raw Airbnb data into cleaned dimensional and fact tables, and provides
 └── dbt_project.yml
 ```
 
-**Setup**
+## Setup
 
 Create and activate a virtual environment
 
@@ -41,14 +41,6 @@ Install dbt (Snowflake adapter)
 ```text
 pip install dbt-snowflake
 ```
-
-Configure profiles.yml
-
-Create or update your profiles.yml (usually under ~/.dbt/) with your Snowflake credentials and a profile that matches dbt_project.yml (profile name, target, schema, etc.).
-
-Common Commands
-
-From the project root:
 
 ## Check connection and configuration
 ```text
@@ -70,7 +62,7 @@ dbt snapshot
 ```text
 dbt build
 ```
-Documentation
+## Documentation
 
 Generate and view the dbt documentation site:
 ```text
