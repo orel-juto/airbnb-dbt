@@ -19,6 +19,7 @@ It models raw Airbnb data into cleaned dimensional and fact tables, and provides
 ├── analyses/            # Ad-hoc / exploration queries
 ├── tests/               # Schema & data tests
 └── dbt_project.yml
+
 ```
 
 ## Setup
@@ -41,6 +42,7 @@ Install dbt (Snowflake adapter)
 ```text
 pip install dbt-snowflake
 ```
+---
 
 ## Check connection and configuration
 ```text
@@ -62,6 +64,8 @@ dbt snapshot
 ```text
 dbt build
 ```
+---
+
 ## Documentation
 
 Generate and view the dbt documentation site:
