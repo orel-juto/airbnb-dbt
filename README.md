@@ -21,26 +21,26 @@ It models raw Airbnb data into cleaned dimensional and fact tables, and provides
 └── dbt_project.yml
 ```
 
-Setup
+**Setup**
 
 Create and activate a virtual environment
 
 macOS / Linux:
-
+```text
 python3 -m venv venv
 source venv/bin/activate
-
+```
 
 Windows (PowerShell):
-
+```text
 python -m venv venv
 .\venv\Scripts\activate
-
+```
 
 Install dbt (Snowflake adapter)
-
+```text
 pip install dbt-snowflake
-
+```
 
 Configure profiles.yml
 
