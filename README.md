@@ -50,28 +50,33 @@ Common Commands
 
 From the project root:
 
-# Check connection and configuration
+## Check connection and configuration
+```text
 dbt debug
-
-# Run all models
+```
+## Run all models
+```text
 dbt run
-
+```
 # Run tests (schema + data tests)
+```text
 dbt test
-
-# Run snapshots
+```
+## Run snapshots
+```text
 dbt snapshot
-
-# Full pipeline (models + tests + snapshots)
+```
+## Full pipeline (models + tests + snapshots)
+```text
 dbt build
-
+```
 Documentation
 
 Generate and view the dbt documentation site:
-
+```text
 dbt docs generate
 dbt docs serve
-
+```
 
 This will open an interactive UI with:
 
