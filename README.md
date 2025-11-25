@@ -22,28 +22,67 @@ It models raw Airbnb data into cleaned dimensional and fact tables, and provides
 ```
 
 Setup
-Create a virtual environment
 
-macOS / Linux
+Create and activate a virtual environment
+
+macOS / Linux:
+
 python3 -m venv venv
 source venv/bin/activate
 
-Windows (PowerShell)
+
+Windows (PowerShell):
+
 python -m venv venv
 .\venv\Scripts\activate
+
 
 Install dbt (Snowflake adapter)
 
 pip install dbt-snowflake
 
+
 Configure profiles.yml
 
-Edit your ~/.dbt/profiles.yml with the correct Snowflake credentials and ensure the profile name matches the one defined in dbt_project.yml.
+Create or update your profiles.yml (usually under ~/.dbt/) with your Snowflake credentials and a profile that matches dbt_project.yml (profile name, target, schema, etc.).
 
-Running the Project
+Common Commands
 
-dbt debug – validate project configuration and Snowflake connection
-dbt run – execute all models
-dbt test – run schema and data tests
-dbt snapshot – run or update snapshots
-dbt build – full pipeline (models + tests + snapshots)
+From the project root:
+
+# Check connection and configuration
+dbt debug
+
+# Run all models
+dbt run
+
+# Run tests (schema + data tests)
+dbt test
+
+# Run snapshots
+dbt snapshot
+
+# Full pipeline (models + tests + snapshots)
+dbt build
+
+Documentation
+
+Generate and view the dbt documentation site:
+
+dbt docs generate
+dbt docs serve
+
+
+This will open an interactive UI with:
+
+Model documentation and column descriptions
+
+Lineage graph
+
+Tests and exposures
+
+Notes
+
+This project is primarily for learning and practice with dbt and Snowflake.
+
+Folder structure, naming conventions, tests, contracts, docs, and hooks follow common dbt best practices learned in the course.
