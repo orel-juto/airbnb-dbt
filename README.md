@@ -70,15 +70,7 @@ dbt docs generate
 dbt docs serve
 ```
 
-This will open an interactive UI with:
-
-Model documentation and column descriptions
-
-Lineage graph
-
-Tests and exposures
-
-Notes
+## Notes
 
 This project is primarily for learning and practice with dbt and Snowflake.
 
