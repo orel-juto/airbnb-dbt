@@ -19,6 +19,7 @@ It models raw Airbnb data into cleaned dimensional and fact tables, and provides
 ├── analyses/            # Ad-hoc / exploration queries
 ├── tests/               # Schema & data tests
 └── dbt_project.yml
+```
 
 Setup
 Create a virtual environment
