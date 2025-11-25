@@ -58,7 +58,7 @@ dbt debug
 ```text
 dbt run
 ```
-# Run tests (schema + data tests)
+## Run tests (schema + data tests)
 ```text
 dbt test
 ```
